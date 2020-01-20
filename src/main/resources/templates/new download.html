@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>新建下载任务</title>
+    <script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+<form id="form_newDownload" action="/" method="post">
+    <span>url:</span>
+    <input type="text" name="url" style="width:350px;"/>
+    <input type="submit" value="提交">
+</form>
+<script type="text/javascript">
+    document.getElementById("form_newDownload")
+        .setAttribute("action", baseUrl + "/download/newDownload");
+</script>
+</body>
+</html>
